@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h2>Use up and down arrow keys to control your paddle!</h2>
+        <h2 id="playerScore">Player 0:0 AI</h2>
+        <h1 id="loseWin"></h1>
+        <svg id="canvas" width="600" height="600">
+
+
+
+            <rect id="playerpaddle" x="50" y="280" width="5" height="40" fill="white"  ></rect>
+
+
+
+            <rect id="computerpaddle" x="550" y="280" width="5" height="40" fill="white" >
+            </rect>
+            <rect id="ball" x="298" y="298" width="4" height="4" fill="white">
+            </rect>
+
+        </svg>
+    </body>
+</html>
